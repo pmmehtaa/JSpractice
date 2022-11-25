@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Cahllenge 5</title>
+    <script>
+      const calcAge = (a, b, c) => (a + b + c) / 3;
+
+      //********************TEST 1***********************//
+
+      // const avgDoplphin = calcAge(44,23,71);
+      // const avgKoala = calcAge(65,54,49);
+
+      // function checkWinner(avgDoplphin,avgKoala) {
+      //     if(avgDoplphin > avgKoala){
+      //         console.log(`Dolphin Wins (${avgDoplphin} vs ${avgKoala})`);
+      //     }
+      //     else{
+      //         console.log(`Koala Wins (${avgKoala} vs ${avgDoplphin})`);
+      //     }
+      // }
+
+      // checkWinner(avgDoplphin,avgKoala);
+
+      //*****************TEST 2*********************//
+
+      const avgDoplphin = calcAge(85, 54, 41);
+      const avgKoala = calcAge(28, 34, 27);
+
+      function checkWinner(avgDoplphin, avgKoala) {
+        if (avgDoplphin > 2 * avgKoala) {
+          console.log(`Dolphin Wins (${avgDoplphin} vs ${avgKoala})`);
+        } else if (avgKoala > 2 * avgDoplphin) {
+          console.log(`Koala Wins (${avgKoala} vs ${avgDoplphin})`);
+        } else {
+          console.log(`No one wins`);
+          console.log(
+            `Avg Score of team Dolphin is = ${avgDoplphin} and Avg score team Koala is = ${avgKoala}`
+          );
+        }
+      }
+
+      checkWinner(avgDoplphin, avgKoala);
+    </script>
+  </head>
+  <body>
+    <h1>Coding Cahllenge 5 (Function)</h1>
+  </body>
+</html>

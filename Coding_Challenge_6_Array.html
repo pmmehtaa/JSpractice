@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coding Challenge 6</title>
+    <script>
+      function calcTip(bill_amt) {
+        if (bill_amt >= 50 && bill_amt <= 300) {
+          console.log(`Tip is ${(15 * bill_amt) / 100}`);
+        } else {
+          console.log(`Tip is ${(20 * bill_amt) / 100}`);
+        }
+      }
+
+      calcTip(500);
+
+      const bills = [125, 555, 44];
+      console.log(`Bills are ${bills}`);
+
+      const tips = [18.75, 111, 8.8];
+      console.log(`Tips are ${tips}`);
+    </script>
+  </head>
+  <body>
+    <h1>Coding Challenge 6 _ Array</h1>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Challenge 8</title>
+    <script>
+      const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+      let tips = [];
+      let total = [];
+
+      for (let i = 0; i <= bills.length - 1; i++) {
+        if (bills[i] >= 50 && bills[i] <= 300) {
+          tips.push((bills[i] * 15) / 100);
+        } else {
+          tips.push((bills[i] * 20) / 100);
+        }
+        total.push(bills[i] + tips[i]);
+      }
+      console.log(bills, tips, total);
+
+      let arr = [26.4, 339.25, 202.4, 528, 44.4, 120.75, 12, 1320, 98.9, 59.8];
+      sum = 0;
+      i = 0;
+      let avg = [];
+
+      function calcAverage(val) {
+        sum = sum + val;
+      }
+      for (x = 0; x <= arr.length - 1; x++) {
+        calcAverage(arr[i]);
+        i++;
+      }
+      avg.push(sum / 10);
+      console.log(avg);
+    </script>
+  </head>
+  <body>
+    <h1>Coding Challenge 8 _ Loop</h1>
+  </body>
+</html>

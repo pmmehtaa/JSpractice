@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Challenge 7</title>
+    <script>
+      const mark = {
+        firstName: "Mark",
+        lastName: "Miller",
+        mass: 78,
+        height: 1.69,
+
+        calcBMI: function () {
+          this.bmi = this.mass / this.height ** 2;
+          return this.bmi;
+        },
+      };
+
+      const john = {
+        firstName: "John",
+        lastName: "Smith",
+        mass: 92,
+        height: 1.95,
+        calcBMI: function () {
+          this.bmi = this.mass / this.height ** 2;
+          return this.bmi;
+        },
+      };
+      console.log(mark, john);
+
+      mark.calcBMI();
+      john.calcBMI();
+
+      console.log(mark.bmi, john.bmi);
+    </script>
+  </head>
+  <body>
+    <h1>Coding Challenge 7 _ Object</h1>
+  </body>
+</html>
