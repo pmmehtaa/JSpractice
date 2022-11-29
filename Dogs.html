@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Dogs</title>
+    <script>
+
+      let i = 0;
+      const checkDogs = function (dogsJulia,dogsKate) {
+      let juliacorrect = dogsJulia.slice();
+      juliacorrect.splice(0,1);
+      juliacorrect.splice(-2);
+      console.log(juliacorrect);
+
+      let dogs = juliacorrect.concat(dogsKate);
+      console.log(dogs);
+
+      dogs.forEach(function (dog,i){
+        if (dog>=3){
+          console.log(`Dog number ${i+1} is an adult,and is ${dog} years old.`)
+        }
+        else{
+          console.log(`Dog number ${i+1} is still a puppy.`)
+        }
+      })
+       }
+      checkDogs([3,5,2,12,7],[4,1,15,8,3])
+    </script>
+</head>
+<body>
+<h2>checkDogs</h2>
+</body>
+</html>

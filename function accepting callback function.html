@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+    <script>
+       let user1 = {
+           name : 'Parth Mehta',
+           age : 21,
+           Profession : 'student',
+       }
+       printDetails=function () {
+           console.log(this.name + [' ' + 'Gujarat' + ' ' + 'India']);
+
+           let newFun = printDetails.bind(user1);
+           newFun();
+       }
+    </script>
+</head>
+<body>
+<h1>Call , Apply & Bind Method</h1>
+</body>
+</html>

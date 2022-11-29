@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football_Betting</title>
+  <script>
+    const game = {
+      team1: 'Bayern Munich',
+      team2: 'Borrussia Dortmund',
+      players: [
+        [
+          'Neuer',
+          'Pavard',
+          'Martinez',
+          'Alaba',
+          'Davies',
+          'Kimmich',
+          'Goretzka',
+          'Coman',
+          'Muller',
+          'Gnarby',
+          'Lewandowski',
+        ],
+        [
+          'Burki',
+          'Schulz',
+          'Hummels',
+          'Akanji',
+          'Hakimi',
+          'Weigl',
+          'Witsel',
+          'Hazard',
+          'Brandt',
+          'Sancho',
+          'Gotze',
+        ],
+      ],
+      score: '4:0',
+      scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+      date: 'Nov 9th, 2037',
+      odds: {
+        team1: 1.33,
+        x: 3.25,
+        team2: 6.5,
+      },
+    };
+
+    const gameEvents = new Map([
+        [17, '⚽️ GOAL'],
+        [36, '🔁 Substitution'],
+        [47, '⚽️ GOAL'],
+        [61, '🔁 Substitution'],
+        [64, '🔶 Yellow card'],
+        [69, '🔴 Red card'],
+        [70, '🔁 Substitution'],
+        [72, '🔁 Substitution'],
+        [76, '⚽️ GOAL'],
+        [80, '⚽️ GOAL'],
+        [92, '🔶 Yellow card'],
+    ]);
+
+    let events =  new Set(gameEvents.values());
+    console.log(events);
+    let all = gameEvents.values();
+    gameEvents.delete(64);
+    console.log(gameEvents);
+
+    for (const[min,event] of gameEvents){
+        const time = min<=45 ? 'FIRST' : 'SECOND';
+        console.log(`${time}HALF : ${min} : ${event}`)
+    }
+
+    let name ='Parth';
+    console.log(name.slice(1));
+    // for (const [i,player] of game.scored.entries()) {
+    //     console.log(` Goal-${i+1} : ${player}`);
+    // }
+    // //2.
+    // const val = Object.values(game.odds);
+    // let avg = 0;
+    // for (const odd of val) avg+=odd;
+    // avg/=val.length;
+    // console.log(avg);
+
+
+//BOOLEANS
+
+
+    // //
+
+
+  // //1.
+    // const [players1,players2] = game.players;
+    // console.log(players1,players2);
+    //
+    // //2.
+    // const[gk,...fieldPlayers]=players1;
+    // console.log(gk,fieldPlayers);
+    //
+    // //3.
+    // const allPlayers = [...players1,...players2];
+    // console.log(allPlayers);
+  </script>
+</head>
+<body>
+<h1>  Football Betting </h1>
+</body>
+</html>
+
+
